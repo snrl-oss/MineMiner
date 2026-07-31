@@ -1,0 +1,102 @@
+# =======================================================
+#                  MineMizer Configuration
+#                  Developed by: MineDev
+# =======================================================
+
+# -------------------------------------------------------
+# 1. Chunk Limitleri (Chunk Entity & Block Limits)
+# -------------------------------------------------------
+limits:
+  mobs:
+    max-per-chunk: 15
+  item-frames:
+    max-per-chunk: 8
+  armor-stands:
+    max-per-chunk: 6
+  hoppers:
+    max-per-chunk: 10
+  vehicles:
+    max-per-chunk: 5
+
+# -------------------------------------------------------
+# 2. Spawner Sınırlayıcı
+# -------------------------------------------------------
+spawner-limiter:
+  enabled: true
+  max-mobs-per-chunk: 8
+
+# -------------------------------------------------------
+# 3. Redstone & Piston Sınırlayıcı
+# -------------------------------------------------------
+redstone-limiter:
+  enabled: true
+  max-updates-per-second: 30
+
+piston-limiter:
+  enabled: true
+  max-pushes-per-second: 20
+
+# -------------------------------------------------------
+# 4. Sıvı Akış Sınırlayıcı (Su & Lav)
+# -------------------------------------------------------
+liquid-limiter:
+  enabled: true
+  max-flows-per-second: 40
+
+# -------------------------------------------------------
+# 5. Mob Birleştirici & AI Uyutucu
+# -------------------------------------------------------
+mob-stacker:
+  enabled: true
+  max-stack: 50
+
+mob-ai-optimizer:
+  enabled: true
+  disable-ai-threshold: 8
+
+# -------------------------------------------------------
+# 6. Yere Düşen Eşya Birleştirici (Item Stacker)
+# -------------------------------------------------------
+item-stacker:
+  enabled: true
+
+# -------------------------------------------------------
+# 7. Ok & Mermi Temizleyici
+# -------------------------------------------------------
+clean-projectiles:
+  enabled: true
+
+# -------------------------------------------------------
+# 8. Düşük TPS Patlama (TNT) Koruması
+# -------------------------------------------------------
+explosion-limiter:
+  disable-block-damage-on-lag: true
+
+# -------------------------------------------------------
+# 9. Zamanlı Yerdeki Eşya Temizleyici (ClearLag)
+# -------------------------------------------------------
+clearlag:
+  enabled: true
+  interval-seconds: 300
+
+# -------------------------------------------------------
+# 10. Mesajlar & Bildirimler
+# -------------------------------------------------------
+messages:
+  prefix: "&8[&bMineMizer&8] "
+  limit-reached-item-frame: "&cBu chunk'taki esya cercevesi sinirina ulasildi!"
+  limit-reached-armor-stand: "&cBu chunk'taki armor stand sinirina ulasildi!"
+  limit-reached-hopper: "&cBu chunk'taki huni (hopper) sinirina ulasildi!"
+  no-permission: "&cBu komutu kullanmak icin yetkiniz yok."
+  reload-success: "&aKonfigurasyon basariyla yenilendi!"
+  clearlag-cleared: "&eYerdeki &c%count% &eadet esya temizlendi!"
+
+
+# -------------------------------------------------------
+# 11. Spawner Birleştirici (Spawner Stacker)
+# -------------------------------------------------------
+spawner-stacker:
+  enabled: true
+  radius: 3 # Kaç blok yakınındaki spawner'lar birleşsin?
+  max-stack: 16 # Bir blokta maks kaç spawner üst üste binebilir?
+  multiply-spawns: true # Katlanan spawner o oranda fazla mob doğursun mu?

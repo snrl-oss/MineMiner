@@ -1,0 +1,13 @@
+name: MineMizer
+version: 1.0
+main: com.minedev.minemizer.MineMizer
+api-version: '1.21'
+author: MineDev
+description: Gelişmiş chunk varlığı ve kızıltaş optimizasyon eklentisi.
+
+commands:
+  minemizer:
+    description: MineMizer ana komutu
+    permission: minemizer.admin
+    aliases: [mmizer, mm]
+    usage: /minemizer [reload | status | clearlag]
